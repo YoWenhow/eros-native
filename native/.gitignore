@@ -1,0 +1,20 @@
+# Toolchains, local identities and generated output must never be committed.
+.build/
+.swiftpm/
+.xtool/
+/xtool/
+build/
+dist/
+*.ipa
+*.app/
+*.xip
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+.env
+.env.*
+!.env.example
+Configuration/*.local.*
+logs/
+# Do not ignore Packages/: it is reserved for hand-written ErosCore packages.

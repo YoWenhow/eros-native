@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "image-captured-ex",
+  "target": "imagePage",
+  "outcome": "success",
+  "data": {
+    "index": 0,
+    "pageCount": 15,
+    "imageURL": "https://cdn.example.invalid/image.jpg",
+    "width": 1280,
+    "height": 2136,
+    "showKey": null,
+    "sourceID": null
+  }
+}

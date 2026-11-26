@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "detail-missing-metadata",
+  "target": "galleryDetail",
+  "outcome": "success",
+  "data": {
+    "galleryID": 42,
+    "title": "Synthetic minimal",
+    "pageCount": 1,
+    "rating": null,
+    "coverURL": null,
+    "tags": []
+  }
+}

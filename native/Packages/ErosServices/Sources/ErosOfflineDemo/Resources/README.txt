@@ -1,0 +1,1 @@
+Intentional offline demo resources. Synthetic HTML and 3 generated solid-colour PNGs, 320x480. No live site content, credentials or network access. List page 2 repeats gallery 42 intentionally to exercise consumer deduplication. All hosts use .invalid. Not the T11 test fixture corpus.

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "favorites-captured-eh-add",
+  "target": "favoritePopup",
+  "outcome": "success",
+  "data": {
+    "groups": 10,
+    "isFavorite": false
+  }
+}

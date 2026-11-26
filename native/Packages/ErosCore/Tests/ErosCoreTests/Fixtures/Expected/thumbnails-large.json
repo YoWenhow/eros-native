@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "thumbnails-large",
+  "target": "readerPages",
+  "outcome": "success",
+  "data": {
+    "pages": [
+      {
+        "index": 0,
+        "displayNumber": 1,
+        "pageURL": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "thumbnailURL": "https://cdn.example.invalid/synthetic-800-1200-jpg_l.jpg"
+      }
+    ]
+  }
+}

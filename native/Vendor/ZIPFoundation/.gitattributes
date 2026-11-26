@@ -1,0 +1,3 @@
+# Preserve the exact upstream 0.9.20 bytes, including its two trailing spaces.
+Sources/CZLib/shim.h whitespace=-blank-at-eol
+Sources/ZIPFoundation/FileManager+ZIP.swift whitespace=-blank-at-eol

@@ -1,0 +1,5 @@
+version: 1
+bundleID: org.erosnative.app
+product: ErosNative
+infoPath: Configuration/Info.plist
+iconPath: Resources/AppIcon.png

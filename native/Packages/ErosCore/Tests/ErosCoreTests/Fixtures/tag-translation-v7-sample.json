@@ -1,0 +1,25 @@
+{
+  "repo": "https://github.com/EhTagTranslation/Database",
+  "head": {
+    "sha": "e0f66dc4424a53872473b05b7fb006ceebfcbe5d"
+  },
+  "version": 7,
+  "data": [
+    {
+      "namespace": "language",
+      "count": 2,
+      "data": {
+        "english": {
+          "name": "英语",
+          "intro": "",
+          "links": ""
+        },
+        "chinese": {
+          "name": "汉语",
+          "intro": "",
+          "links": ""
+        }
+      }
+    }
+  ]
+}

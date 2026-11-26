@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "image-quota",
+  "target": "imagePage",
+  "outcome": "error",
+  "errorCode": "quotaExceeded"
+}

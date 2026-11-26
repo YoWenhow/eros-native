@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-numeric-last",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "items": [
+      {
+        "galleryID": 42,
+        "token": "synthetictoken",
+        "title": "合成画集 日本語",
+        "coverURL": "https://cdn.example.invalid/cover.png",
+        "category": "Non-H",
+        "pageCount": 3
+      }
+    ],
+    "nextHref": null,
+    "previousHref": "?page=1"
+  }
+}

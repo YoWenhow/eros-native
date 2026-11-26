@@ -1,0 +1,9 @@
+{
+  "i": "synthetic.jpg :: 800 x 1200",
+  "i3": "<img src=\"https://cdn.example.invalid/image.jpg\" style=\"width:800px\">",
+  "i5": "<a href=\"https://eh.example.invalid/g/42/synthetictoken/\">Gallery</a>",
+  "i6": "<a onclick=\"return nl('syntheticsource')\">Reload</a>",
+  "x": "bad",
+  "y": 1200,
+  "p": 2
+}

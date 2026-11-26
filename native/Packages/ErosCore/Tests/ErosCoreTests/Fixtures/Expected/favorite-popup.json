@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "favorite-popup",
+  "target": "favorites",
+  "outcome": "success",
+  "data": {
+    "groups": [
+      {
+        "id": "0",
+        "title": "SYNTHETIC_GROUP_0"
+      },
+      {
+        "id": "1",
+        "title": "SYNTHETIC_GROUP_1"
+      },
+      {
+        "id": "2",
+        "title": "SYNTHETIC_GROUP_2"
+      },
+      {
+        "id": "3",
+        "title": "SYNTHETIC_GROUP_3"
+      },
+      {
+        "id": "4",
+        "title": "SYNTHETIC_GROUP_4"
+      },
+      {
+        "id": "5",
+        "title": "SYNTHETIC_GROUP_5"
+      },
+      {
+        "id": "6",
+        "title": "SYNTHETIC_GROUP_6"
+      },
+      {
+        "id": "7",
+        "title": "SYNTHETIC_GROUP_7"
+      },
+      {
+        "id": "8",
+        "title": "SYNTHETIC_GROUP_8"
+      },
+      {
+        "id": "9",
+        "title": "SYNTHETIC_GROUP_9"
+      }
+    ],
+    "selectedGroupID": "0",
+    "note": null
+  }
+}

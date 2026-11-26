@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-empty-captured",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "items": [],
+    "nextHref": null,
+    "previousHref": null
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "image-bootstrap",
+  "target": "imagePage",
+  "outcome": "success",
+  "data": {
+    "index": 0,
+    "pageCount": 3,
+    "imageURL": "https://cdn.example.invalid/image.jpg",
+    "width": 800,
+    "height": 1200,
+    "showKey": "syntheticshowkey",
+    "sourceID": "syntheticsource"
+  }
+}

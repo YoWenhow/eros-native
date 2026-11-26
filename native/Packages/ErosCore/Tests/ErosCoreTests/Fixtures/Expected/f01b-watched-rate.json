@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-watched-rate",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "rateLimited",
+  "retryAfter": 37
+}

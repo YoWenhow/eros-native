@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-popular-denied",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "accessDenied"
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "image-no-showkey",
+  "target": "imagePage",
+  "outcome": "success",
+  "data": {
+    "index": 0,
+    "imageURL": "https://cdn.example.invalid/image.jpg",
+    "showKey": null,
+    "nextStrategy": "html-bootstrap"
+  }
+}

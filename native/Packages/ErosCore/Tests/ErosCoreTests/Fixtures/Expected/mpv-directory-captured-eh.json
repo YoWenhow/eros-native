@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "mpv-directory-captured-eh",
+  "target": "mpvDirectory",
+  "outcome": "success",
+  "data": {
+    "pageCount": 4,
+    "firstPage": 1,
+    "lastPage": 4
+  }
+}

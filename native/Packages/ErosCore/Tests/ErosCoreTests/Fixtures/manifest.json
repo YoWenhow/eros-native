@@ -1,0 +1,2804 @@
+{
+  "schemaVersion": 1,
+  "sourceBaseline": "c667fb319f5b0f465e1977c0b19aa768f0f7e128",
+  "fixtures": [
+    {
+      "id": "list-numeric-first",
+      "input": "HTML/list-numeric-first.html",
+      "expected": "Expected/list-numeric-first.json",
+      "target": "galleryList",
+      "coverage": [
+        "numeric-pagination",
+        "first-page"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/?page=0",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/?page=0",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "list-numeric-middle",
+      "input": "HTML/list-numeric-middle.html",
+      "expected": "Expected/list-numeric-middle.json",
+      "target": "galleryList",
+      "coverage": [
+        "numeric-pagination",
+        "previous"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/?page=1",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/?page=1",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "list-numeric-last",
+      "input": "HTML/list-numeric-last.html",
+      "expected": "Expected/list-numeric-last.json",
+      "target": "galleryList",
+      "coverage": [
+        "numeric-pagination",
+        "terminal"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/?page=2",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/?page=2",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "list-cursor",
+      "input": "HTML/list-cursor.html",
+      "expected": "Expected/list-cursor.json",
+      "target": "galleryList",
+      "coverage": [
+        "cursor-pagination",
+        "preserve-full-query"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/?f_search=synthetic",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/?f_search=synthetic",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "原 parser split('=').last 会丢掉复合参数；预期保留完整 href 是原生修正要求，不是原输出。"
+      ]
+    },
+    {
+      "id": "list-cursor-terminal",
+      "input": "HTML/list-cursor-terminal.html",
+      "expected": "Expected/list-cursor-terminal.json",
+      "target": "galleryList",
+      "coverage": [
+        "cursor-pagination",
+        "terminal"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "list-lazy-missing-metadata",
+      "input": "HTML/list-lazy-missing-metadata.html",
+      "expected": "Expected/list-lazy-missing-metadata.json",
+      "target": "galleryList",
+      "coverage": [
+        "lazy-cover",
+        "optional-metadata"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "原实现强制解包评分可能崩溃；nil 是原生期望行为。"
+      ]
+    },
+    {
+      "id": "list-duplicate",
+      "input": "HTML/list-duplicate.html",
+      "expected": "Expected/list-duplicate.json",
+      "target": "galleryList",
+      "coverage": [
+        "duplicate-input"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "解析器保留原输入顺序；T16/T20 才做稳定 ID 合并，不能在 T12 悄悄丢重复。"
+      ]
+    },
+    {
+      "id": "list-empty-unconfirmed",
+      "input": "HTML/list-empty-unconfirmed.html",
+      "expected": "Expected/list-empty-unconfirmed.json",
+      "target": "galleryList",
+      "coverage": [
+        "empty-list"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "真实空结果标志/文案 UNKNOWN；需合法脱敏样本后提升为 success fixture。"
+      ]
+    },
+    {
+      "id": "list-wrong-page",
+      "input": "HTML/list-wrong-page.html",
+      "expected": "Expected/list-wrong-page.json",
+      "target": "galleryList",
+      "coverage": [
+        "wrong-page"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "list-missing-id",
+      "input": "HTML/list-missing-id.html",
+      "expected": "Expected/list-missing-id.json",
+      "target": "galleryList",
+      "coverage": [
+        "malformed-identity"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "list-display-mode",
+      "input": "HTML/list-display-mode.html",
+      "expected": "Expected/list-display-mode.json",
+      "target": "galleryList",
+      "coverage": [
+        "unsupported-layout"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "isGalleryListDmL"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery inline_set=dm_l retry"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "detail-basic",
+      "input": "HTML/detail-basic.html",
+      "expected": "Expected/detail-basic.json",
+      "target": "galleryDetail",
+      "coverage": [
+        "detail",
+        "unicode",
+        "tags"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_detail_parser.dart",
+          "symbol": "parseGalleryDetail / parseGalleryImage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/g/42/synthetictoken/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/g/42/synthetictoken/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "身份从调用 reference/base URL 提供，非伪造脚本变量；GN/GJ 原始值不等于已确认原/译标题语义。"
+      ]
+    },
+    {
+      "id": "detail-missing-metadata",
+      "input": "HTML/detail-missing-metadata.html",
+      "expected": "Expected/detail-missing-metadata.json",
+      "target": "galleryDetail",
+      "coverage": [
+        "detail",
+        "optional-metadata"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_detail_parser.dart",
+          "symbol": "parseGalleryDetail / parseGalleryImage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/g/42/synthetictoken/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/g/42/synthetictoken/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "thumbnails-small",
+      "input": "HTML/thumbnails-small.html",
+      "expected": "Expected/thumbnails-small.json",
+      "target": "readerPages",
+      "coverage": [
+        "thumbnail-small",
+        "one-to-zero"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_detail_parser.dart",
+          "symbol": "parseGalleryDetail / parseGalleryImage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/g/42/synthetictoken/?p=0",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/g/42/synthetictoken/?p=0",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "thumbnails-large",
+      "input": "HTML/thumbnails-large.html",
+      "expected": "Expected/thumbnails-large.json",
+      "target": "readerPages",
+      "coverage": [
+        "thumbnail-large"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_detail_parser.dart",
+          "symbol": "parseGalleryDetail / parseGalleryImage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/g/42/synthetictoken/?p=0",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/g/42/synthetictoken/?p=0",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "thumbnails-modern",
+      "input": "HTML/thumbnails-modern.html",
+      "expected": "Expected/thumbnails-modern.json",
+      "target": "readerPages",
+      "coverage": [
+        "thumbnail-modern",
+        "nested-label"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_detail_parser.dart",
+          "symbol": "parseGalleryDetail / parseGalleryImage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/g/42/synthetictoken/",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/g/42/synthetictoken/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "image-bootstrap",
+      "input": "HTML/image-bootstrap.html",
+      "expected": "Expected/image-bootstrap.json",
+      "target": "imagePage",
+      "coverage": [
+        "image-html",
+        "showkey-bootstrap"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/image_page_parser.dart",
+          "symbol": "paraImage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "image-no-showkey",
+      "input": "HTML/image-no-showkey.html",
+      "expected": "Expected/image-no-showkey.json",
+      "target": "imagePage",
+      "coverage": [
+        "missing-showkey"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/image_page_parser.dart",
+          "symbol": "paraImage"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "fetchImageInfoByApi / postEhApi"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "image-quota",
+      "input": "HTML/image-quota.html",
+      "expected": "Expected/image-quota.json",
+      "target": "imagePage",
+      "coverage": [
+        "quota-image"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/image_page_parser.dart",
+          "symbol": "paraImage"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/app_dio/http_transformer.dart",
+          "symbol": "GalleryImageHttpTransformer REG_509_URL"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "原正则要求 .org；fixture 主机为 .invalid，原生测试需将 host 白名单与配额路径判定解耦；当前真实 CDN UNKNOWN。"
+      ]
+    },
+    {
+      "id": "showpage-success",
+      "input": "JSON/showpage-success.json",
+      "expected": "Expected/showpage-success.json",
+      "target": "showpage",
+      "coverage": [
+        "showpage-json",
+        "one-to-zero"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/showpage_parser.dart",
+          "symbol": "paraShowPageJson"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "fetchImageInfoByApi / postEhApi"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://eh.example.invalid/api.php",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/api.php",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "showpage-key-mismatch",
+      "input": "JSON/showpage-key-mismatch.json",
+      "expected": "Expected/showpage-key-mismatch.json",
+      "target": "showpage",
+      "coverage": [
+        "invalid-showkey"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "fetchImageInfoByApi / postEhApi"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://eh.example.invalid/api.php",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/api.php",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "unknowns": [
+        "恢复请求 reason=invalidShowKey；AppError.imageExpired 仅对 UI 分类，不丢失内部恢复原因。"
+      ]
+    },
+    {
+      "id": "showpage-bad-dimensions",
+      "input": "JSON/showpage-bad-dimensions.json",
+      "expected": "Expected/showpage-bad-dimensions.json",
+      "target": "showpage",
+      "coverage": [
+        "invalid-dimensions"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/showpage_parser.dart",
+          "symbol": "paraShowPageJson width/height null"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://eh.example.invalid/api.php",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/api.php",
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "favorite-popup",
+      "input": "HTML/favorite-popup.html",
+      "expected": "Expected/favorite-popup.json",
+      "target": "favorites",
+      "coverage": [
+        "favorite-groups"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_fav_parser.dart",
+          "symbol": "parserAddFavPage"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "favorites-list-groups",
+      "input": "HTML/favorites-list-groups.html",
+      "expected": "Expected/favorites-list-groups.json",
+      "target": "favorites",
+      "coverage": [
+        "favorite-list-groups"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/favorites.php",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/favorites.php",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "这里只断言分组提取，不将空表当已验证的收藏空结果。"
+      ]
+    },
+    {
+      "id": "login-redirect",
+      "input": "HTML/login-redirect.html",
+      "expected": "Expected/login-redirect.json",
+      "target": "responseClassification",
+      "coverage": [
+        "login-page"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "userLogin referer"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://forums.example.invalid/index.php?act=Login&CODE=00",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "此用例依据最终登录 URL 设计；实际登录页 DOM/CAPTCHA/重定向链 UNKNOWN。"
+      ]
+    },
+    {
+      "id": "login-html-unconfirmed",
+      "input": "HTML/login-html-unconfirmed.html",
+      "expected": "Expected/login-html-unconfirmed.json",
+      "target": "responseClassification",
+      "coverage": [
+        "login-dom-unknown"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "userLogin"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "access-denied",
+      "input": "HTML/access-denied.html",
+      "expected": "Expected/access-denied.json",
+      "target": "responseClassification",
+      "coverage": [
+        "access-restriction"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 403,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "rate-limited",
+      "input": "HTML/rate-limited.html",
+      "expected": "Expected/rate-limited.json",
+      "target": "responseClassification",
+      "coverage": [
+        "rate-limit"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 429,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Retry-After": "30"
+        }
+      },
+      "unknowns": [
+        "当前线上响应与这些最小结构是否一致尚未采样。"
+      ]
+    },
+    {
+      "id": "gallery-removed",
+      "input": "HTML/gallery-removed.html",
+      "expected": "Expected/gallery-removed.json",
+      "target": "responseClassification",
+      "coverage": [
+        "detail-404"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGalleryDetail 404 / parseErrGallery"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 404,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP 404 不能独断权限/永久删除原因；具体可用性标记需真实样本。"
+      ]
+    },
+    {
+      "id": "banned-text",
+      "input": "HTML/banned-text.html",
+      "expected": "Expected/banned-text.json",
+      "target": "responseClassification",
+      "coverage": [
+        "banned-text"
+      ],
+      "provenance": "SYNTHETIC_SOURCE_DERIVED",
+      "liveStatus": "UNKNOWN",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成；标题/账号/备注/凭据未采集；所有地址为 .invalid 或相对路径，标记为人工合成；无真实 Cookie 或可访问 token。",
+      "adaptations": [
+        "站点/CDN 主机替换为 .invalid；凭据相关键只用 SYNTHETIC 占位。原 Dart 硬编码域名正则不直接运行这些样本。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "只有 banned 子串分支有源码依据；线上封禁精确文案/状态/恢复时间 UNKNOWN。"
+      ]
+    },
+    {
+      "id": "list-empty-captured",
+      "input": "HTML/list-empty-captured.html",
+      "expected": "Expected/list-empty-captured.json",
+      "target": "galleryList",
+      "coverage": [
+        "empty-list",
+        "captured-empty-marker"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/list-empty-captured.html",
+          "symbol": "body > div.ido > div > p: No hits found; #nb/#toppane/#searchbox"
+        }
+      ],
+      "redaction": "保留用户原文件；测试副本删除搜索值、所有脚本/样式/注释、事件属性及外链。未发现凭据标记。仅保留页面文本与结构属性。",
+      "adaptations": [
+        "input f_search 替换为 SYNTHETIC_NO_RESULTS_QUERY；外链、脚本与样式移除",
+        "HTTP状态/headers/finalURL 为测试上下文，非原始网络捕获元数据"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/?f_search=SYNTHETIC_NO_RESULTS_QUERY",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/?f_search=SYNTHETIC_NO_RESULTS_QUERY",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "原始捕获时间、HTTP状态和headers未知；此记录仅证明用户提供的EX无结果HTML结构，不保证所有线上布局。"
+      ],
+      "capture": {
+        "sanitizedSHA256": "a55a43d0a6c904eb7899088da4c2c7cbfa70afee7a5ae918f0c83876f0d52320"
+      }
+    },
+    {
+      "id": "list-thumbnail-captured",
+      "input": "HTML/list-thumbnail-captured.html",
+      "expected": "Expected/list-thumbnail-captured.json",
+      "target": "galleryList",
+      "coverage": [
+        "thumbnail-list",
+        "cursor-pagination"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/list-thumbnail-captured.html",
+          "symbol": "div.itg.gld > div.gl1t; .gl4t.glname.glink, .gl3t, .gl5t; selected t"
+        }
+      ],
+      "redaction": "Further sanitized locally: all identifiers, gallery tokens, titles, image addresses replaced; scripts/events omitted.",
+      "adaptations": [
+        "Retained 25 card DOMs, categories, counts and rating styles; navigation identifiers replaced with synthetic values."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP status and headers reconstructed for parser testing; device compatibility remains pending."
+      ],
+      "capture": {
+        "sanitizedSHA256": "3a69d10fba727890a5bc613d4895995cd5dbd352ed1292f19f0263d8b6ecb4a3"
+      }
+    },
+    {
+      "id": "thumbnails-captured-ex",
+      "input": "HTML/thumbnails-captured-ex.html",
+      "expected": "Expected/thumbnails-captured-ex.json",
+      "target": "readerPages",
+      "coverage": [
+        "captured-hath-sprite",
+        "thumbnail-modern"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/thumbnails-captured-ex.html",
+          "symbol": "#gdt > a; title Page N; CSS sprite width/height/offset"
+        }
+      ],
+      "redaction": "Retained gdt structural subtree only; gallery/page/image identifiers and all URLs replaced; text scripts event handlers removed.",
+      "adaptations": [
+        "Kept CSS width height horizontal offset and original page numbers; replaced hosts with inert .invalid."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/g/42/synthetictoken/",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/g/42/synthetictoken/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed for offline test; real-device media rendering pending."
+      ],
+      "capture": {
+        "sanitizedSHA256": "1e43302f0163b4a9c800fb3b48f519144970262674483cc2595a650376ee8230"
+      }
+    },
+    {
+      "id": "thumbnails-captured-eh",
+      "input": "HTML/thumbnails-captured-eh.html",
+      "expected": "Expected/thumbnails-captured-eh.json",
+      "target": "readerPages",
+      "coverage": [
+        "captured-hath-sprite",
+        "thumbnail-modern"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/thumbnails-captured-eh.html",
+          "symbol": "#gdt > a; title Page N; CSS sprite width/height/offset"
+        }
+      ],
+      "redaction": "Retained gdt structural subtree only; gallery/page/image identifiers and all URLs replaced; text scripts event handlers removed.",
+      "adaptations": [
+        "Kept CSS width height horizontal offset and original page numbers; replaced hosts with inert .invalid."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/g/42/synthetictoken/",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/g/42/synthetictoken/",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed for offline test; real-device media rendering pending."
+      ],
+      "capture": {
+        "sanitizedSHA256": "74d9d2a304e8ab3dd755c70520e0d21f6a8532a2c45e067b7acd3f2ac0e8fbac"
+      }
+    },
+    {
+      "id": "image-captured-ex",
+      "input": "HTML/image-captured-ex.html",
+      "expected": "Expected/image-captured-ex.json",
+      "target": "imagePage",
+      "coverage": [
+        "captured-reader-navigation-first",
+        "reader-dimensions"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/image-captured-ex.html",
+          "symbol": "i2 navigation preceding metadata; i3 image"
+        }
+      ],
+      "redaction": "Retained i2 structural order and numeric metadata only; replaced all URLs and filenames; removed scripts, keys and event handlers.",
+      "adaptations": [
+        "i3 and i5 reduced to parser-relevant synthetic identifiers; media host/port replaced by inert .invalid HTTPS default port. Peer URL shape tested separately without real identifiers."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/s/syntheticimage/42-1",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/s/syntheticimage/42-1",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP response metadata assumed for offline test; actual rendering requires device validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "87d8751643d76fe9be3eca7e50563e38228b2325b3a40226ff04865b1856d7cd"
+      }
+    },
+    {
+      "id": "image-captured-eh",
+      "input": "HTML/image-captured-eh.html",
+      "expected": "Expected/image-captured-eh.json",
+      "target": "imagePage",
+      "coverage": [
+        "captured-reader-navigation-first",
+        "reader-dimensions"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/image-captured-eh.html",
+          "symbol": "i2 navigation preceding metadata; i3 image"
+        }
+      ],
+      "redaction": "Retained i2 structural order and numeric metadata only; replaced all URLs and filenames; removed scripts, keys and event handlers.",
+      "adaptations": [
+        "i3 and i5 reduced to parser-relevant synthetic identifiers; media host/port replaced by inert .invalid HTTPS default port. Peer URL shape tested separately without real identifiers."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP response metadata assumed for offline test; actual rendering requires device validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "9f9c9e56cd92146ed79d017c2d29dcc634f83bf9d896d491e9c3fa9c9f713363"
+      }
+    },
+    {
+      "id": "favorites-captured-eh-list",
+      "input": "HTML/favorites-captured-eh-list.html",
+      "expected": "Expected/favorites-captured-eh-list.json",
+      "target": "favoritesList",
+      "coverage": [
+        "favorite-groups",
+        "favorites-captured-list"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/favorites-captured-eh-list.html",
+          "symbol": "captured favorites DOM"
+        }
+      ],
+      "redaction": "All prose, gallery identifiers and URLs replaced; scripts and account UI removed.",
+      "adaptations": [
+        "List reduced to first card; all gallery links use synthetic gallery 42; no pagination retained."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/favorites.php",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/favorites.php",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed offline. Edit form contains remove option, not a successful removal response. Live mutations and pagination still require phone validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "0ac8bd86f7cdb75c05316d74b1f7a00835a416bc67a83e2a84ce2d72a16d24b3"
+      }
+    },
+    {
+      "id": "favorites-captured-eh-add",
+      "input": "HTML/favorites-captured-eh-add.html",
+      "expected": "Expected/favorites-captured-eh-add.json",
+      "target": "favoritePopup",
+      "coverage": [
+        "favorite-groups",
+        "favorites-captured-add"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/favorites-captured-eh-add.html",
+          "symbol": "captured favorites DOM"
+        }
+      ],
+      "redaction": "All prose, gallery identifiers and URLs replaced; scripts and account UI removed.",
+      "adaptations": [
+        "List reduced to first card; all gallery links use synthetic gallery 42; no pagination retained."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed offline. Edit form contains remove option, not a successful removal response. Live mutations and pagination still require phone validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "c94343fb5c7e9a4bbdbe3a54153687c76e5851986697b43a7ecd168e9cd5e8bc"
+      }
+    },
+    {
+      "id": "favorites-captured-eh-edit",
+      "input": "HTML/favorites-captured-eh-edit.html",
+      "expected": "Expected/favorites-captured-eh-edit.json",
+      "target": "favoritePopup",
+      "coverage": [
+        "favorite-groups",
+        "favorites-captured-edit"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/favorites-captured-eh-edit.html",
+          "symbol": "captured favorites DOM"
+        }
+      ],
+      "redaction": "All prose, gallery identifiers and URLs replaced; scripts and account UI removed.",
+      "adaptations": [
+        "List reduced to first card; all gallery links use synthetic gallery 42; no pagination retained."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed offline. Edit form contains remove option, not a successful removal response. Live mutations and pagination still require phone validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "8a4c17c2d9441c347d811b159cedc9e619a3f079f39bb1da15d9ab3fc0aa3900"
+      }
+    },
+    {
+      "id": "favorites-captured-ex-list",
+      "input": "HTML/favorites-captured-ex-list.html",
+      "expected": "Expected/favorites-captured-ex-list.json",
+      "target": "favoritesList",
+      "coverage": [
+        "favorite-groups",
+        "favorites-captured-list"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/favorites-captured-ex-list.html",
+          "symbol": "captured favorites DOM"
+        }
+      ],
+      "redaction": "All prose, gallery identifiers and URLs replaced; scripts and account UI removed.",
+      "adaptations": [
+        "List reduced to first card; all gallery links use synthetic gallery 42; no pagination retained."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/favorites.php",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/favorites.php",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed offline. Edit form contains remove option, not a successful removal response. Live mutations and pagination still require phone validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "35244287a3d302f070251bc36d5861217bcc7b4f707eae259fefc4c5d3df9592"
+      }
+    },
+    {
+      "id": "favorites-captured-ex-add",
+      "input": "HTML/favorites-captured-ex-add.html",
+      "expected": "Expected/favorites-captured-ex-add.json",
+      "target": "favoritePopup",
+      "coverage": [
+        "favorite-groups",
+        "favorites-captured-add"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/favorites-captured-ex-add.html",
+          "symbol": "captured favorites DOM"
+        }
+      ],
+      "redaction": "All prose, gallery identifiers and URLs replaced; scripts and account UI removed.",
+      "adaptations": [
+        "List reduced to first card; all gallery links use synthetic gallery 42; no pagination retained."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed offline. Edit form contains remove option, not a successful removal response. Live mutations and pagination still require phone validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "7aaf33e994d7d9b6f2e4b254925eb5e17494d540e0bb92f82cea28c1cc7c9f80"
+      }
+    },
+    {
+      "id": "favorites-captured-ex-edit",
+      "input": "HTML/favorites-captured-ex-edit.html",
+      "expected": "Expected/favorites-captured-ex-edit.json",
+      "target": "favoritePopup",
+      "coverage": [
+        "favorite-groups",
+        "favorites-captured-edit"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "path": "native/Packages/ErosCore/Tests/ErosCoreTests/Fixtures/HTML/favorites-captured-ex-edit.html",
+          "symbol": "captured favorites DOM"
+        }
+      ],
+      "redaction": "All prose, gallery identifiers and URLs replaced; scripts and account UI removed.",
+      "adaptations": [
+        "List reduced to first card; all gallery links use synthetic gallery 42; no pagination retained."
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/gallerypopups.php?gid=42&t=synthetictoken&act=addfav",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      },
+      "unknowns": [
+        "HTTP metadata assumed offline. Edit form contains remove option, not a successful removal response. Live mutations and pagination still require phone validation."
+      ],
+      "capture": {
+        "sanitizedSHA256": "7b9c7369598bd01f8ff0e58d8630b3c27648373f2812654f29b8f2b7c0acf304"
+      }
+    },
+    {
+      "id": "f01b-popular-success",
+      "input": "HTML/f01b-popular-success.html",
+      "expected": "Expected/f01b-popular-success.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "popular",
+        "success"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/popular",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/popular",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-popular-empty",
+      "input": "HTML/f01b-popular-empty.html",
+      "expected": "Expected/f01b-popular-empty.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "popular",
+        "empty"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/popular",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/popular",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-popular-authentication",
+      "input": "HTML/f01b-popular-authentication.html",
+      "expected": "Expected/f01b-popular-authentication.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "popular",
+        "authentication"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/popular",
+        "site": "eh"
+      },
+      "response": {
+        "status": 401,
+        "finalURL": "https://eh.example.invalid/popular",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-popular-denied",
+      "input": "HTML/f01b-popular-denied.html",
+      "expected": "Expected/f01b-popular-denied.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "popular",
+        "denied"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/popular",
+        "site": "eh"
+      },
+      "response": {
+        "status": 403,
+        "finalURL": "https://eh.example.invalid/popular",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-popular-rate",
+      "input": "HTML/f01b-popular-rate.html",
+      "expected": "Expected/f01b-popular-rate.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "popular",
+        "rate"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/popular",
+        "site": "eh"
+      },
+      "response": {
+        "status": 429,
+        "finalURL": "https://eh.example.invalid/popular",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Retry-After": "37"
+        }
+      }
+    },
+    {
+      "id": "f01b-popular-structure",
+      "input": "HTML/f01b-popular-structure.html",
+      "expected": "Expected/f01b-popular-structure.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "popular",
+        "structure"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/popular",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/popular",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-watched-success",
+      "input": "HTML/f01b-watched-success.html",
+      "expected": "Expected/f01b-watched-success.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "watched",
+        "success"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/watched",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/watched",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-watched-empty",
+      "input": "HTML/f01b-watched-empty.html",
+      "expected": "Expected/f01b-watched-empty.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "watched",
+        "empty"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/watched",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/watched",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-watched-authentication",
+      "input": "HTML/f01b-watched-authentication.html",
+      "expected": "Expected/f01b-watched-authentication.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "watched",
+        "authentication"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/watched",
+        "site": "ex"
+      },
+      "response": {
+        "status": 401,
+        "finalURL": "https://ex.example.invalid/watched",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-watched-denied",
+      "input": "HTML/f01b-watched-denied.html",
+      "expected": "Expected/f01b-watched-denied.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "watched",
+        "denied"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/watched",
+        "site": "ex"
+      },
+      "response": {
+        "status": 403,
+        "finalURL": "https://ex.example.invalid/watched",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-watched-rate",
+      "input": "HTML/f01b-watched-rate.html",
+      "expected": "Expected/f01b-watched-rate.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "watched",
+        "rate"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/watched",
+        "site": "ex"
+      },
+      "response": {
+        "status": 429,
+        "finalURL": "https://ex.example.invalid/watched",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Retry-After": "37"
+        }
+      }
+    },
+    {
+      "id": "f01b-watched-structure",
+      "input": "HTML/f01b-watched-structure.html",
+      "expected": "Expected/f01b-watched-structure.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "watched",
+        "structure"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://ex.example.invalid/watched",
+        "site": "ex"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://ex.example.invalid/watched",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-toplist-success",
+      "input": "HTML/f01b-toplist-success.html",
+      "expected": "Expected/f01b-toplist-success.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "toplist",
+        "success"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/toplist.php?tl=15",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/toplist.php?tl=15",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-toplist-empty",
+      "input": "HTML/f01b-toplist-empty.html",
+      "expected": "Expected/f01b-toplist-empty.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "toplist",
+        "empty"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/toplist.php?tl=15",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/toplist.php?tl=15",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-toplist-authentication",
+      "input": "HTML/f01b-toplist-authentication.html",
+      "expected": "Expected/f01b-toplist-authentication.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "toplist",
+        "authentication"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/toplist.php?tl=15",
+        "site": "eh"
+      },
+      "response": {
+        "status": 401,
+        "finalURL": "https://eh.example.invalid/toplist.php?tl=15",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-toplist-denied",
+      "input": "HTML/f01b-toplist-denied.html",
+      "expected": "Expected/f01b-toplist-denied.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "toplist",
+        "denied"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/toplist.php?tl=15",
+        "site": "eh"
+      },
+      "response": {
+        "status": 403,
+        "finalURL": "https://eh.example.invalid/toplist.php?tl=15",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "f01b-toplist-rate",
+      "input": "HTML/f01b-toplist-rate.html",
+      "expected": "Expected/f01b-toplist-rate.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "toplist",
+        "rate"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/toplist.php?tl=15",
+        "site": "eh"
+      },
+      "response": {
+        "status": 429,
+        "finalURL": "https://eh.example.invalid/toplist.php?tl=15",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8",
+          "Retry-After": "37"
+        }
+      }
+    },
+    {
+      "id": "f01b-toplist-structure",
+      "input": "HTML/f01b-toplist-structure.html",
+      "expected": "Expected/f01b-toplist-structure.json",
+      "target": "galleryList",
+      "coverage": [
+        "f01b-b1",
+        "toplist",
+        "structure"
+      ],
+      "provenance": "SYNTHETIC_DESIGN_CASE",
+      "liveStatus": "UNKNOWN",
+      "authoredAt": "2026-11-08",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/network/request.dart",
+          "symbol": "getGallery"
+        },
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/gallery_list_parser.dart",
+          "symbol": "parseGalleryList"
+        }
+      ],
+      "redaction": "从零合成，只使用.invalid及固定synthetictoken；无账户/正文/有效凭据。",
+      "adaptations": [
+        "普通列表结构在目标URL下的设计假设，不是对应网站成功/空/权限响应捕获。",
+        "HTTP状态与headers均为测试输入，不声称线上观察。"
+      ],
+      "unknowns": [
+        "该端点真实DOM、明确空标志、最低权限及实际限流响应待采样。",
+        "popular分页未知；样本无下一页只是本测试设定。"
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://eh.example.invalid/toplist.php?tl=15",
+        "site": "eh"
+      },
+      "response": {
+        "status": 200,
+        "finalURL": "https://eh.example.invalid/toplist.php?tl=15",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        }
+      }
+    },
+    {
+      "id": "mpv-directory-captured-eh",
+      "input": "HTML/mpv-directory-captured-eh.html",
+      "expected": "Expected/mpv-directory-captured-eh.json",
+      "target": "mpvDirectory",
+      "coverage": [
+        "mpv-directory",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_parser.dart",
+          "symbol": "parserMpvPage"
+        }
+      ],
+      "redaction": "Only captured gid/mpvkey/imagelist/api_url structure retained; identifiers, keys, names and thumbnail URLs replaced consistently. No cookies or HAR headers.",
+      "adaptations": [
+        "Script declaration projection; unrelated markup removed",
+        "gid becomes 42; keys alphanumeric synthetic; hosts .invalid; original list order and count retained"
+      ],
+      "unknowns": [
+        "Permission/quota errors and expired-key refresh not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "231ab5d764f69ea6bb725d207c1cbe2409073d824f41586a23333ac04afa82bd"
+      },
+      "request": {
+        "method": "GET",
+        "site": "eh",
+        "url": "https://eh.example.invalid/mpv/42/synthetictoken/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://eh.example.invalid/mpv/42/synthetictoken/"
+      }
+    },
+    {
+      "id": "mpv-directory-captured-ex",
+      "input": "HTML/mpv-directory-captured-ex.html",
+      "expected": "Expected/mpv-directory-captured-ex.json",
+      "target": "mpvDirectory",
+      "coverage": [
+        "mpv-directory",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_parser.dart",
+          "symbol": "parserMpvPage"
+        }
+      ],
+      "redaction": "Only captured gid/mpvkey/imagelist/api_url structure retained; identifiers, keys, names and thumbnail URLs replaced consistently. No cookies or HAR headers.",
+      "adaptations": [
+        "Script declaration projection; unrelated markup removed",
+        "gid becomes 42; keys alphanumeric synthetic; hosts .invalid; original list order and count retained"
+      ],
+      "unknowns": [
+        "Permission/quota errors and expired-key refresh not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "ab9fb33e9c34a44acb1ecb089fed0c4bea6c5d9655794f68938c47198e8e5ca5"
+      },
+      "request": {
+        "method": "GET",
+        "site": "ex",
+        "url": "https://ex.example.invalid/mpv/42/synthetictoken/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://ex.example.invalid/mpv/42/synthetictoken/"
+      }
+    },
+    {
+      "id": "mpv-dispatch-captured-eh-1",
+      "input": "JSON/mpv-dispatch-captured-eh-1.json",
+      "expected": "Expected/mpv-dispatch-captured-eh-1.json",
+      "target": "mpvDispatch",
+      "coverage": [
+        "mpv-dispatch",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_image_dispatch_parser.dart",
+          "symbol": "parserMpvImageDispatch"
+        }
+      ],
+      "redaction": "Identifiers, source key, URLs and text replaced; exact field names/types and dimensions retained.",
+      "adaptations": [
+        "lo maps consistently to projected directory key/gid/page",
+        "All unrelated strings synthetic; URLs .invalid"
+      ],
+      "unknowns": [
+        "Live error/expiry branches not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "5cd57ee2428695d73f69fbc5361fe1037106df7ccba9823e5b33db51b6b7965b"
+      },
+      "request": {
+        "method": "POST",
+        "site": "eh",
+        "url": "https://api.eh.example.invalid/api.php"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://api.eh.example.invalid/api.php"
+      }
+    },
+    {
+      "id": "mpv-dispatch-captured-eh-2",
+      "input": "JSON/mpv-dispatch-captured-eh-2.json",
+      "expected": "Expected/mpv-dispatch-captured-eh-2.json",
+      "target": "mpvDispatch",
+      "coverage": [
+        "mpv-dispatch",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_image_dispatch_parser.dart",
+          "symbol": "parserMpvImageDispatch"
+        }
+      ],
+      "redaction": "Identifiers, source key, URLs and text replaced; exact field names/types and dimensions retained.",
+      "adaptations": [
+        "lo maps consistently to projected directory key/gid/page",
+        "All unrelated strings synthetic; URLs .invalid"
+      ],
+      "unknowns": [
+        "Live error/expiry branches not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "7fa95690a3a064f13cd9a43ad39ffe0e3d67df7fd5940d5cc7dd32519d09a395"
+      },
+      "request": {
+        "method": "POST",
+        "site": "eh",
+        "url": "https://api.eh.example.invalid/api.php"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://api.eh.example.invalid/api.php"
+      }
+    },
+    {
+      "id": "mpv-dispatch-captured-eh-3",
+      "input": "JSON/mpv-dispatch-captured-eh-3.json",
+      "expected": "Expected/mpv-dispatch-captured-eh-3.json",
+      "target": "mpvDispatch",
+      "coverage": [
+        "mpv-dispatch",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_image_dispatch_parser.dart",
+          "symbol": "parserMpvImageDispatch"
+        }
+      ],
+      "redaction": "Identifiers, source key, URLs and text replaced; exact field names/types and dimensions retained.",
+      "adaptations": [
+        "lo maps consistently to projected directory key/gid/page",
+        "All unrelated strings synthetic; URLs .invalid"
+      ],
+      "unknowns": [
+        "Live error/expiry branches not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "cb01ac18ec78fc7686924745e13da6aa4ffd584231002872c65031bb290e4a5f"
+      },
+      "request": {
+        "method": "POST",
+        "site": "eh",
+        "url": "https://api.eh.example.invalid/api.php"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://api.eh.example.invalid/api.php"
+      }
+    },
+    {
+      "id": "mpv-dispatch-captured-ex-1",
+      "input": "JSON/mpv-dispatch-captured-ex-1.json",
+      "expected": "Expected/mpv-dispatch-captured-ex-1.json",
+      "target": "mpvDispatch",
+      "coverage": [
+        "mpv-dispatch",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_image_dispatch_parser.dart",
+          "symbol": "parserMpvImageDispatch"
+        }
+      ],
+      "redaction": "Identifiers, source key, URLs and text replaced; exact field names/types and dimensions retained.",
+      "adaptations": [
+        "lo maps consistently to projected directory key/gid/page",
+        "All unrelated strings synthetic; URLs .invalid"
+      ],
+      "unknowns": [
+        "Live error/expiry branches not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "34876997d1050a91a5ba050c212a214f7e453aa1baea6ad3132f5921c653b91a"
+      },
+      "request": {
+        "method": "POST",
+        "site": "ex",
+        "url": "https://api.ex.example.invalid/api.php"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://api.ex.example.invalid/api.php"
+      }
+    },
+    {
+      "id": "mpv-dispatch-captured-ex-2",
+      "input": "JSON/mpv-dispatch-captured-ex-2.json",
+      "expected": "Expected/mpv-dispatch-captured-ex-2.json",
+      "target": "mpvDispatch",
+      "coverage": [
+        "mpv-dispatch",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_image_dispatch_parser.dart",
+          "symbol": "parserMpvImageDispatch"
+        }
+      ],
+      "redaction": "Identifiers, source key, URLs and text replaced; exact field names/types and dimensions retained.",
+      "adaptations": [
+        "lo maps consistently to projected directory key/gid/page",
+        "All unrelated strings synthetic; URLs .invalid"
+      ],
+      "unknowns": [
+        "Live error/expiry branches not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "05c46f36d5265c2e1d7e143858859a376935ab7faec17735700cef8236e757d2"
+      },
+      "request": {
+        "method": "POST",
+        "site": "ex",
+        "url": "https://api.ex.example.invalid/api.php"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://api.ex.example.invalid/api.php"
+      }
+    },
+    {
+      "id": "mpv-dispatch-captured-ex-3",
+      "input": "JSON/mpv-dispatch-captured-ex-3.json",
+      "expected": "Expected/mpv-dispatch-captured-ex-3.json",
+      "target": "mpvDispatch",
+      "coverage": [
+        "mpv-dispatch",
+        "one-to-zero"
+      ],
+      "provenance": "CAPTURED_REDACTED",
+      "liveStatus": "USER_PROVIDED_CAPTURE",
+      "sourceRefs": [
+        {
+          "repository": "erosTeam/eros_fe",
+          "path": "lib/common/parser/mpv_image_dispatch_parser.dart",
+          "symbol": "parserMpvImageDispatch"
+        }
+      ],
+      "redaction": "Identifiers, source key, URLs and text replaced; exact field names/types and dimensions retained.",
+      "adaptations": [
+        "lo maps consistently to projected directory key/gid/page",
+        "All unrelated strings synthetic; URLs .invalid"
+      ],
+      "unknowns": [
+        "Live error/expiry branches not captured"
+      ],
+      "capture": {
+        "sanitizedSHA256": "c8fc1f3904f6b82bce3b50e153d033f13118effc271ae6f2588aaca2fc3f3207"
+      },
+      "request": {
+        "method": "POST",
+        "site": "ex",
+        "url": "https://api.ex.example.invalid/api.php"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/html"
+        },
+        "finalURL": "https://api.ex.example.invalid/api.php"
+      }
+    }
+  ]
+}

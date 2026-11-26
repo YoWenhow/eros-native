@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "login-html-unconfirmed",
+  "target": "responseClassification",
+  "outcome": "unknown",
+  "unknownReason": "仅依据提交字段合成，未取得真实登录 DOM；禁止用这份示例硬编码登录检测。"
+}

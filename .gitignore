@@ -1,0 +1,14 @@
+*.ipa
+*.app/
+*.mobileprovision
+*.p8
+*.p12
+*.key
+*.pem
+*.private.*
+.env
+.env.*
+.DS_Store
+dist/
+.build/
+.swiftpm/

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "access-denied",
+  "target": "responseClassification",
+  "outcome": "error",
+  "errorCode": "accessDenied"
+}

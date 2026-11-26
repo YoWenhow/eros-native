@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "login-redirect",
+  "target": "responseClassification",
+  "outcome": "error",
+  "errorCode": "authenticationRequired"
+}

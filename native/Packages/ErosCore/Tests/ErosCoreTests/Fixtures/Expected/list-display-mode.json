@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-display-mode",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "unsupportedContent"
+}

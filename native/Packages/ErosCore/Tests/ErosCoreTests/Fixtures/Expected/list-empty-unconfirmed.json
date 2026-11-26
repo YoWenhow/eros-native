@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-empty-unconfirmed",
+  "target": "galleryList",
+  "outcome": "unknown",
+  "unknownReason": "只有空表，源码无法区分真实无结果与结构变更；不可据此返回确定的成功空数组。"
+}

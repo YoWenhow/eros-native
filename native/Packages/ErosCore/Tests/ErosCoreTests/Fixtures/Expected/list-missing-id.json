@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-missing-id",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "parseMismatch"
+}

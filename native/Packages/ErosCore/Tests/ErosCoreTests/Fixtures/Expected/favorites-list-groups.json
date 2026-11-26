@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "favorites-list-groups",
+  "target": "favorites",
+  "outcome": "success",
+  "data": {
+    "groups": [
+      {
+        "id": "0",
+        "title": "SYNTHETIC_GROUP_0",
+        "count": 0
+      },
+      {
+        "id": "1",
+        "title": "SYNTHETIC_GROUP_1",
+        "count": 1
+      }
+    ]
+  }
+}

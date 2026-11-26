@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-watched-authentication",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "authenticationRequired"
+}

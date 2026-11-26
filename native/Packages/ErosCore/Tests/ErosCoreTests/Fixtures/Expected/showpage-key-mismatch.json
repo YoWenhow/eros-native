@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "showpage-key-mismatch",
+  "target": "showpage",
+  "outcome": "error",
+  "errorCode": "imageExpired"
+}

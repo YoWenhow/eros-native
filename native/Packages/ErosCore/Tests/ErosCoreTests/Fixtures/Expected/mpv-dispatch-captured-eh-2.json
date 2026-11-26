@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "mpv-dispatch-captured-eh-2",
+  "target": "mpvDispatch",
+  "outcome": "success",
+  "data": {
+    "pageIndex": 1,
+    "width": 1280,
+    "height": 1545
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "detail-basic",
+  "target": "galleryDetail",
+  "outcome": "success",
+  "data": {
+    "galleryID": 42,
+    "token": "synthetictoken",
+    "displayTitle": "Synthetic title",
+    "titleGN": "Synthetic title",
+    "titleGJ": "合成原題",
+    "pageCount": 3,
+    "rating": 4,
+    "tags": [
+      {
+        "namespace": "language",
+        "tags": [
+          "japanese"
+        ]
+      }
+    ]
+  }
+}

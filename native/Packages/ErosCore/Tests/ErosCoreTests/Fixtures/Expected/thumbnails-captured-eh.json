@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "thumbnails-captured-eh",
+  "target": "readerPages",
+  "outcome": "success",
+  "data": {
+    "pages": [
+      {
+        "index": 0,
+        "displayNumber": 1,
+        "pageURL": "https://eh.example.invalid/s/syntheticimage/42-1",
+        "thumbnailURL": "https://cdn.example.invalid/sprite0.webp",
+        "offset": 0,
+        "width": 200,
+        "height": 228
+      },
+      {
+        "index": 1,
+        "displayNumber": 2,
+        "pageURL": "https://eh.example.invalid/s/syntheticimage/42-2",
+        "thumbnailURL": "https://cdn.example.invalid/sprite0.webp",
+        "offset": 200,
+        "width": 200,
+        "height": 228
+      },
+      {
+        "index": 2,
+        "displayNumber": 3,
+        "pageURL": "https://eh.example.invalid/s/syntheticimage/42-3",
+        "thumbnailURL": "https://cdn.example.invalid/sprite0.webp",
+        "offset": 400,
+        "width": 200,
+        "height": 285
+      }
+    ]
+  }
+}

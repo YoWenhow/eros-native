@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "gallery-removed",
+  "target": "responseClassification",
+  "outcome": "error",
+  "errorCode": "httpStatus"
+}

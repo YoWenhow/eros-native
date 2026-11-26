@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "thumbnails-small",
+  "target": "readerPages",
+  "outcome": "success",
+  "data": {
+    "pages": [
+      {
+        "index": 1,
+        "displayNumber": 2,
+        "pageURL": "https://eh.example.invalid/s/syntheticimage/42-2",
+        "thumbnailURL": "https://cdn.example.invalid/sprite.jpg",
+        "offset": 80
+      }
+    ]
+  }
+}

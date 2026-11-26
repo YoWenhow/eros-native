@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-popular-success",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "ids": [
+      42
+    ],
+    "titles": [
+      "合成画集 日本語"
+    ],
+    "nextURL": null,
+    "previousURL": null
+  }
+}

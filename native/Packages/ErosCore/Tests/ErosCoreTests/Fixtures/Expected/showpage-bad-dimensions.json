@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "showpage-bad-dimensions",
+  "target": "showpage",
+  "outcome": "error",
+  "errorCode": "parseMismatch"
+}

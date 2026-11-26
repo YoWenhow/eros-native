@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-watched-structure",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "parseMismatch"
+}

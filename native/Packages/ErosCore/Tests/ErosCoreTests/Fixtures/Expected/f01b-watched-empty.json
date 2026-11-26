@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-watched-empty",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "ids": [],
+    "titles": [],
+    "nextURL": null,
+    "previousURL": null
+  }
+}

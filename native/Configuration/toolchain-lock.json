@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "swift": {
+    "selectedVersion": "6.4.2",
+    "platform": "debian13",
+    "source": "https://download.swift.org/swift-6.4.2-release/debian13/swift-6.4.2-RELEASE/swift-6.4.2-RELEASE-debian13.tar.gz",
+    "sha256": "8b6fde775b7cfc7a3758739d8abb09bb6fba519c6532d6b1a47faff791646c64"
+  },
+  "xtool": {
+    "selectedRelease": "1.24.0",
+    "source": "https://github.com/xtool-org/xtool/releases/download/1.24.0/xtool-x86_64.AppImage",
+    "sha256": "dbfd9d7216f077c84c171b688c4173c37c23ca76bf7fd185d1a9ae8a53dab59f"
+  },
+  "xcode": {
+    "selectedVersion": "27.1",
+    "build": "27A9275",
+    "sha256": "038ad29cc2cd87e7762aac596833943000fd3d5fb64be530e2ecdbe5449cd660"
+  },
+  "darwinSDK": {
+    "version": "27.1",
+    "epoch": 4,
+    "openAppleMacrosVersion": "1.4.1",
+    "darwinToolsVersion": "1.1.0",
+    "flavor": "normal"
+  },
+  "deploymentTarget": "27.0",
+  "app": {
+    "baseBundleID": "org.erosnative.app",
+    "version": "0.20",
+    "build": "250"
+  },
+  "deviceFamily": [
+    1
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-thumbnail-captured",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "items": [
+      {
+        "galleryID": 1,
+        "token": "synthetic1",
+        "title": "Captured item 1",
+        "category": "Artist CG",
+        "pageCount": 5,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/1.jpg"
+      },
+      {
+        "galleryID": 2,
+        "token": "synthetic2",
+        "title": "Captured item 2",
+        "category": "Artist CG",
+        "pageCount": 12,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/2.jpg"
+      },
+      {
+        "galleryID": 3,
+        "token": "synthetic3",
+        "title": "Captured item 3",
+        "category": "Image Set",
+        "pageCount": 101,
+        "rating": 3.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/3.jpg"
+      },
+      {
+        "galleryID": 4,
+        "token": "synthetic4",
+        "title": "Captured item 4",
+        "category": "Image Set",
+        "pageCount": 318,
+        "rating": 4.5,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/4.jpg"
+      },
+      {
+        "galleryID": 5,
+        "token": "synthetic5",
+        "title": "Captured item 5",
+        "category": "Western",
+        "pageCount": 33,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/5.jpg"
+      },
+      {
+        "galleryID": 6,
+        "token": "synthetic6",
+        "title": "Captured item 6",
+        "category": "Artist CG",
+        "pageCount": 9,
+        "rating": 0.5,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/6.jpg"
+      },
+      {
+        "galleryID": 7,
+        "token": "synthetic7",
+        "title": "Captured item 7",
+        "category": "Western",
+        "pageCount": 59,
+        "rating": 2.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/7.jpg"
+      },
+      {
+        "galleryID": 8,
+        "token": "synthetic8",
+        "title": "Captured item 8",
+        "category": "Artist CG",
+        "pageCount": 9,
+        "rating": 2.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/8.jpg"
+      },
+      {
+        "galleryID": 9,
+        "token": "synthetic9",
+        "title": "Captured item 9",
+        "category": "Artist CG",
+        "pageCount": 9,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/9.jpg"
+      },
+      {
+        "galleryID": 10,
+        "token": "synthetic10",
+        "title": "Captured item 10",
+        "category": "Artist CG",
+        "pageCount": 5,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/10.jpg"
+      },
+      {
+        "galleryID": 11,
+        "token": "synthetic11",
+        "title": "Captured item 11",
+        "category": "Artist CG",
+        "pageCount": 15,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/11.jpg"
+      },
+      {
+        "galleryID": 12,
+        "token": "synthetic12",
+        "title": "Captured item 12",
+        "category": "Artist CG",
+        "pageCount": 10,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/12.jpg"
+      },
+      {
+        "galleryID": 13,
+        "token": "synthetic13",
+        "title": "Captured item 13",
+        "category": "Artist CG",
+        "pageCount": 9,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/13.jpg"
+      },
+      {
+        "galleryID": 14,
+        "token": "synthetic14",
+        "title": "Captured item 14",
+        "category": "Artist CG",
+        "pageCount": 3,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/14.jpg"
+      },
+      {
+        "galleryID": 15,
+        "token": "synthetic15",
+        "title": "Captured item 15",
+        "category": "Artist CG",
+        "pageCount": 9,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/15.jpg"
+      },
+      {
+        "galleryID": 16,
+        "token": "synthetic16",
+        "title": "Captured item 16",
+        "category": "Artist CG",
+        "pageCount": 8,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/16.jpg"
+      },
+      {
+        "galleryID": 17,
+        "token": "synthetic17",
+        "title": "Captured item 17",
+        "category": "Artist CG",
+        "pageCount": 10,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/17.jpg"
+      },
+      {
+        "galleryID": 18,
+        "token": "synthetic18",
+        "title": "Captured item 18",
+        "category": "Artist CG",
+        "pageCount": 5,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/18.jpg"
+      },
+      {
+        "galleryID": 19,
+        "token": "synthetic19",
+        "title": "Captured item 19",
+        "category": "Artist CG",
+        "pageCount": 14,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/19.jpg"
+      },
+      {
+        "galleryID": 20,
+        "token": "synthetic20",
+        "title": "Captured item 20",
+        "category": "Western",
+        "pageCount": 6,
+        "rating": 0.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/20.jpg"
+      },
+      {
+        "galleryID": 21,
+        "token": "synthetic21",
+        "title": "Captured item 21",
+        "category": "Artist CG",
+        "pageCount": 435,
+        "rating": 4.5,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/21.jpg"
+      },
+      {
+        "galleryID": 22,
+        "token": "synthetic22",
+        "title": "Captured item 22",
+        "category": "Image Set",
+        "pageCount": 17,
+        "rating": 2.5,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/22.jpg"
+      },
+      {
+        "galleryID": 23,
+        "token": "synthetic23",
+        "title": "Captured item 23",
+        "category": "Western",
+        "pageCount": 511,
+        "rating": 1.0,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/23.jpg"
+      },
+      {
+        "galleryID": 24,
+        "token": "synthetic24",
+        "title": "Captured item 24",
+        "category": "Artist CG",
+        "pageCount": 109,
+        "rating": 0.5,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/24.jpg"
+      },
+      {
+        "galleryID": 25,
+        "token": "synthetic25",
+        "title": "Captured item 25",
+        "category": "Artist CG",
+        "pageCount": 6,
+        "rating": 3.5,
+        "uploader": null,
+        "coverURL": "https://cdn.example.invalid/25.jpg"
+      }
+    ],
+    "nextHref": "/?next=26",
+    "previousHref": null,
+    "duplicateGalleryIDs": []
+  }
+}

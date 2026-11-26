@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "rate-limited",
+  "target": "responseClassification",
+  "outcome": "error",
+  "errorCode": "rateLimited"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-watched-success",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "ids": [
+      42
+    ],
+    "titles": [
+      "合成画集 日本語"
+    ],
+    "nextURL": "https://ex.example.invalid/watched?next=41&f_search=synthetic%2Btag",
+    "previousURL": null
+  }
+}

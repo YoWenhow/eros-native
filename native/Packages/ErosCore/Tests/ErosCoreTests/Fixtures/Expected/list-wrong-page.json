@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "list-wrong-page",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "parseMismatch"
+}

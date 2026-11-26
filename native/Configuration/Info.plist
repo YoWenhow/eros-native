@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>Eros Native</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.20</string>
+    <key>CFBundleVersion</key>
+    <string>250</string>
+    <key>UIFileSharingEnabled</key>
+    <true/>
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <true/>
+    <key>CADisableMinimumFrameDurationOnPhone</key>
+    <true/>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>仅在你点击保存当前页时，将该图片添加到相册。</string>
+    <key>CFBundleURLTypes</key>
+    <array><dict><key>CFBundleURLName</key><string>org.erosnative.app.links</string><key>CFBundleURLSchemes</key><array><string>erosnative</string></array></dict></array>
+    <key>NSFaceIDUsageDescription</key>
+    <string>启用应用锁后，用于解锁本机的 Eros Native。</string>
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>org.erosnative.app.downloads.continued.*</string>
+    </array>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+    </array>
+    <key>MinimumOSVersion</key>
+    <string>27.0</string>
+    <key>UIDeviceFamily</key>
+    <array><integer>1</integer></array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UILaunchScreen</key>
+    <dict/>
+</dict>
+</plist>

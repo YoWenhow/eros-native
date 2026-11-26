@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "showpage-success",
+  "target": "showpage",
+  "outcome": "success",
+  "data": {
+    "index": 1,
+    "imageURL": "https://cdn.example.invalid/image.jpg",
+    "width": 800,
+    "height": 1200,
+    "sourceID": "syntheticsource"
+  }
+}

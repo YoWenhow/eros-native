@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-toplist-authentication",
+  "target": "galleryList",
+  "outcome": "error",
+  "errorCode": "authenticationRequired"
+}

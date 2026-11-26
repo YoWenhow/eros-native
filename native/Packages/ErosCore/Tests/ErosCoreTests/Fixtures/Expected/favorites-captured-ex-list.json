@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "favorites-captured-ex-list",
+  "target": "favoritesList",
+  "outcome": "success",
+  "data": {
+    "groups": 10,
+    "items": 1
+  }
+}

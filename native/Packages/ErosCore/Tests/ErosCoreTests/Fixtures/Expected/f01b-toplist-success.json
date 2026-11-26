@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "f01b-toplist-success",
+  "target": "galleryList",
+  "outcome": "success",
+  "data": {
+    "ids": [
+      42
+    ],
+    "titles": [
+      "合成画集 日本語"
+    ],
+    "nextURL": "https://eh.example.invalid/toplist.php?tl=15&p=1",
+    "previousURL": null
+  }
+}

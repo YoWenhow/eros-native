@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "fixtureID": "thumbnails-modern",
+  "target": "readerPages",
+  "outcome": "success",
+  "data": {
+    "pages": [
+      {
+        "index": 2,
+        "displayNumber": 3,
+        "pageURL": "https://ex.example.invalid/s/syntheticimage/42-3",
+        "thumbnailURL": "https://cdn.example.invalid/thumb.jpg"
+      }
+    ]
+  }
+}
